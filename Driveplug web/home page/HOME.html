@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Car Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
+            background-color: #CBE4DE;
+            color: #000000;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #2E4F4F;
+            color: #CBE4DE;
+            padding: 15px 30px; /* Added padding on the right */
+            display: flex;
+            justify-content: flex-end; /* Align buttons to the right */
+            align-items: center;
+            position: fixed;
+            width: calc(100% - 150px); /* Adjust width to account for left nav */
+            top: 0;
+            left: 150px; /* Offset for the left nav */
+            z-index: 1000;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: #CBE4DE;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+
+        header nav ul li a:hover {
+            color: #ffffff;
+        }
+
+        .left-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #2E4F4F;
+            width: 150px;
+            height: 100%;
+            z-index: 999;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .left-nav .logo {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .left-nav .logo img {
+            width: 100px; /* Adjust logo size */
+            height: auto;
+        }
+        .left-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .left-nav ul li {
+            margin-bottom: 20px;
+        }
+
+        .left-nav ul li a {
+            color: #CBE4DE;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .left-nav ul li a:hover {
+            background-color: #CBE4DE;
+            color: #2E4F4F;
+        }
+        .title {
+            text-align: center;
+            font-style: italic;
+            font-size: 100px !important;
+            color: #2E4F4F;
+            margin-top: 100px;  
+            margin-bottom: 80px;
+        }
+
+        .intro-text {
+            font-size: 30px;
+            text-align: center;
+        }
+       .content {
+            margin-left: 150px;
+            padding: 100px 20px 40px;
+        }
+
+        .content h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .content-wrapper .text,
+        .content-wrapper .image {
+            flex: 1 1 400px;
+            max-width: 900px;
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 20px auto;
+            max-width: 1000px;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #2E4F4F;
+            color: #CBE4DE;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            .intro-text {
+                font-size: 20px;
+            }
+            .content {
+                margin-left: 190px;
+                padding: 80px 10px 40px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .left-nav {
+                width: 150px;
+            }
+
+            header {
+                left: 120px;
+                width: calc(100% - 120px);
+            }
+            .intro-text {
+                font-size: 18px;
+            }
+            .title {
+                font-size: 50px !important;
+            }
+
+            .content {
+                margin-left: 150px;
+                padding: 100px 10px 40px;
+            }
+            .image-gallery {
+                max-width: 100%;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+
+            header nav ul li a {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left-nav">
+        <div class="logo">
+            <img src="logoos-removebg-preview.png" alt="logo">
+        </div>
+        <ul>
+            <li><a href="#E-car">E-car</a></li>
+            <li><a href="#Terminology">Terminology</a></li>
+            <li><a href="#e-charge">E-charge</a></li>
+            <li><a href="#impact">Impact</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="HOME.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="HISTORY.html"><i class="fas fa-history"></i></a></li>
+                <li><a href="vehicle.html"><i class="fas fa-car"></i></a></li>
+                <li><a href="ABOUT US.html"><i class="fas fa-info-circle"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="content" id="E-car">
+        <h2 class="title">E-CAR</h2>
+        <div class="content-wrapper">
+            <div class="text">
+                <p class="intro-text">Learning about electric vehicles isn't just about cars — it's about building a sustainable future. From battery systems
+                to smart charging, every innovation holds the power to transform our world. Dive into the world of e-mobility and become
+                part of the change.</p>
+            </div>
+        </div>
+    
+        <div class="image-gallery">
+            <img src="Audi_e-trons.png" alt="Car 1">
+            <img src="TeslaSw.png" alt="Car 2">
+            <img src="Audi_RSe-tron_GTs.png" alt="Car 3">
+        </div>
+    </section>
+    
+    <section class="content" id="Terminology">
+        <h2>E-CAR TERMINOLOGY</h2>
+        <div class="content-wrapper7">
+            <div class="text">
+                <p>The term "electric car" typically refers specifically to battery electric vehicles (BEVs) or all-electric
+                    cars, a type
+                    of electric vehicle (EV) that has an onboard rechargeable battery pack that can be plugged in and
+                    charged from the
+                    electric grid, and the electricity stored on the vehicle is the only energy source that provides
+                    propulsion for the
+                    wheels. The term generally refers to highway-capable automobiles, but there are also low-speed electric
+                    vehicles with
+                    limitations in terms of weight, power, and maximum speed that are allowed to travel on certain public
+                    roads. The latter
+                    are classified as Neighborhood Electric Vehicles (NEVs) in the United States, and as electric motorized
+                    quadricycles in
+                    Europe.</p>
+    
+                <p>Electric cars can be powered by electricity from a variety of sources, including hydropower, solar power,
+                    nuclear power,
+                    and coal-fired power stations. The electricity may be stored onboard the car using a battery, flywheel,
+                    or supercapacitors.
+                    Vehicles making use of engines working on the principle of combustion can usually only derive their
+                    energy from a single or
+                    a few sources, usually non-renewable fossil fuels. A key advantage of electric vehicles is their ability
+                    to recover energy
+                    normally lost during braking as electricity to be restored to the on-board battery or sent back to the
+                    grid. Regenerative braking
+                    is used to slow the vehicle and can provide a significant efficiency improvement over vehicles that do
+                    not recapture energy during
+                    braking.</p>
+                <br>
+                <h1 class="text2">types of electric vehicles (EVs):</h1>
+                <ul>
+                    <li>Electric Vehicle (EV)</li>
+                    <li>Battery Electric Vehicle (BEV)</li>
+                    <li>Plug-in Hybrid Electric Vehicle (PHEV)</li>
+                    <li>Range-Extended Electric Vehicle (REEV)</li>
+                    <li>Fuel Cell Electric Vehicle (FCEV)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section class="content" id="e-charge">
+        <h2>HOW E-CARS CHARGE</h2>
+        <div class="content-wrapper">
+            <div class="text">
+                <p>
+                    Electric cars can be charged from a variety of sources, including wall sockets, charging stations, and
+                    dedicated charging units. The speed of charging depends on the charging station's power output and the
+                    vehicle's onboard charger. The three main types of charging are slow, fast, and ultra-fast charging.
+                </p>
+                <ul>
+                    <li>Slow charging: 3-4 hours</li>
+                    <li>Fast charging: 20-30 minutes</li>
+                    <li>Ultra-fast charging: 5-10 minutes</li>
+                </ul>
+            </div>
+            <div class="image">
+                <img src="EVehicles01.jpg" alt="Car 4">
+            </div>
+        </div>
+    </section>
+    
+    <section class="content" id="impact">
+        <h2>ENVIRONMENTAL IMPACT OF E-CARS</h2>
+        <div class="content-wrapper">
+            <div class="text">
+                <p>
+                    Electric cars produce zero tailpipe emissions, which helps to reduce air pollution and combat climate
+                    change. They are also quieter than vehicles powered by internal combustion engines, which can reduce
+                    noise pollution. However, the environmental impact of electric cars depends on how the electricity used
+                    to charge them is generated. If the electricity comes from renewable sources like wind, solar, or
+                    hydropower, electric cars can be nearly emissions-free over their entire lifecycle.
+                </p>
+                <p>
+                    The production of electric cars, however, can have a higher environmental impact than traditional cars
+                    due to the mining and processing of raw materials like lithium, cobalt, and nickel for batteries. To
+                    minimize the environmental impact of electric cars, it is important to recycle and reuse batteries and
+                    source materials responsibly.
+                </p>
+                <h1>E-car Environmental Benefits</h1>
+                <ul>
+                    <li>Zero tailpipe emissions</li>
+                    <li>Reduced air pollution</li>
+                    <li>Quieter than internal combustion engine vehicles</li>
+                    <li>Lower operating costs</li>
+                    <li>Reduced dependence on fossil fuels</li>
+                </ul>
+            </div>
+            <div class="image">
+                <img src="Tata-tiago-ev-full-specifications-and-price-Charging-Performance-Safety-and-more-Aargoev-1024x577.jpg"
+                    alt="Car 5">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 E-Car Company. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

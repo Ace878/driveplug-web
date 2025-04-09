@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audi Electric Cars</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #CBE4DE;
+            color: #333;
+        }
+
+        header {
+            background: #2E4F4F;
+            color: #CBE4DE;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: #CBE4DE;
+            text-decoration: none;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header nav ul li a:hover {
+            color: #ffffff;
+        }
+
+        .container-wrapper {
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .car-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .car-container img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 10px;
+            flex: 1 1 300px;
+            object-fit: cover;
+        }
+
+        .car-details {
+            flex: 2 1 400px;
+        }
+
+        @media (max-width: 768px) {
+            .car-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .car-container img,
+            .car-details {
+                flex: 1 1 100%;
+                width: 100%;
+            }
+        }
+
+        .footer {
+            background-color: #2E4F4F;
+            color: #CBE4DE;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logoos-removebg-preview.png" alt="logo" />
+            <span>DrivePlug</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="HOME.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="HISTORY.html"><i class="fas fa-history"></i></a></li>
+                <li><a href="vehicle.html"><i class="fas fa-car"></i></a></li>
+                <li><a href="ABOUT US.html"><i class="fas fa-info-circle"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-wrapper">
+        <div class="car-container">
+            <img src="Audi  Q4 e-tron.jpeg" alt="Audi Q4 e-tron">
+            <div class="car-details">
+                <h2>Audi Q4 e-tron</h2>
+                <p>The Audi Q4 e-tron is a compact electric SUV that combines cutting-edge tech with Audi’s signature
+                    luxury feel.</p>
+                <p><strong>About the Car:</strong> With up to 265 miles of range, an intuitive digital cockpit, and a
+                spacious interior, it’s designed for both comfort and performance.</p>
+                <P><strong>performance:</strong></P>
+                <ul>
+                    <li>Power: Up to 295 HP</li>
+                    <li>0-60 mph: 6.2 seconds</li>
+                    <li>Range: Up to 265 miles</li>
+                </ul>
+                    <p><strong>Price:</strong> $48,000</p>
+
+            </div>
+        </div>
+
+        <div class="car-container">
+            <img src="Audi e-tron.jpeg" alt="Audi e-tron GT">
+            <div class="car-details">
+                <h2>Audi e-tron GT</h2>
+                <p>The Audi e-tron GT is a powerful electric grand tourer that delivers stunning performance and
+                    jaw-dropping design.</p>
+                <p><strong>About the Car:</strong> With up to 522 horsepower (or 637 HP in RS trim), 0-60 in just over 3
+                    seconds, and quattro AWD, this EV is a true performance machine.</p>
+                    <P><strong>performance:</strong></P>
+                <ul>
+                    <li>Power: Up to 637 HP (RS model)</li>
+                    <li>0-60 mph: 3.1 seconds (RS model)</li>
+                    <li>Range: Up to 238 miles</li>
+                    <li>Top Speed: 155 mph</li>
+                </ul>
+                <p><strong>Price:</strong> $99,900 - $142,700</p>
+            </div>
+        </div>
+
+        <div class="car-container">
+            <img src="Audi  Q4 e-tron.jpeg" alt="Audi Q8 e-tron">
+            <div class="car-details">
+                <h2>Audi Q8 e-tron</h2>
+                <p>The Audi Q8 e-tron is a premium electric SUV that offers refined performance, space, and all-around
+                    sophistication.</p>
+                <p><strong>About the Car:</strong> With a range up to 285 miles, dual electric motors, and a comfortable
+                    high-tech interior, it’s the flagship of Audi’s electric SUV lineup.</p>
+                <P><strong>performance:</strong></P>
+                <ul>
+                    <li>Power: Up to 402 HP</li>
+                    <li>0-60 mph: 5.6 seconds</li>
+                    <li>Range: Up to 285 miles</li>
+                    <li>Top Speed: 124 mph</li>
+                </ul>
+                <p><strong>Price:</strong> $70,000 - $90,000</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 DrivePlug. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

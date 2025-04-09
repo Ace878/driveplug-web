@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audi Electric Cars</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #CBE4DE;
+            color: #333;
+        }
+
+        header {
+            background: #2E4F4F;
+            color: #CBE4DE;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: #CBE4DE;
+            text-decoration: none;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header nav ul li a:hover {
+            color: #ffffff;
+        }
+
+        .container-wrapper {
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .car-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .car-container img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 10px;
+            flex: 1 1 300px;
+            object-fit: cover;
+        }
+
+        .car-details {
+            flex: 2 1 400px;
+        }
+
+        @media (max-width: 768px) {
+            .car-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .car-container img,
+            .car-details {
+                flex: 1 1 100%;
+                width: 100%;
+            }
+        }
+
+        .footer {
+            background-color: #2E4F4F;
+            color: #CBE4DE;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logoos-removebg-preview.png" alt="logo" />
+            <span>DrivePlug</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="HOME.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="HISTORY.html"><i class="fas fa-history"></i></a></li>
+                <li><a href="vehicle.html"><i class="fas fa-car"></i></a></li>
+                <li><a href="ABOUT US.html"><i class="fas fa-info-circle"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-wrapper">
+        <!-- Audi Q4 e-tron -->
+        <div class="car-container">
+            <img src="Hyundai loniq 5.jpeg" alt="hyundai loniq 5">
+            <div class="car-details">
+                <h2>Hyundai Ioniq 5</h2>
+                <p>The Hyundai Ioniq 5 is a stylish and spacious electric SUV with a futuristic design and advanced
+                    technology.</p>
+                <p><strong>About the Car:</strong> It offers a range of up to 300 miles and fast charging capabilities,
+                    making it perfect for long trips.</p>
+                <p><strong>performance:</strong></p>
+                <ul>
+                    <li>Range: up to 300 miles</li>
+                    <li>Battery: 77.4 kWh</li>
+                    <li>Horsepower: 320 hp</li>
+                    <li>Top Speed: 115 mph</li>
+                </ul>
+                <p><strong>Price:</strong> $38,800 - $45,800</p>
+            </div>
+        </div>
+
+        <!-- Audi e-tron GT -->
+        <div class="car-container">
+            <img src="Hyundai Kona Electric.jpeg" alt="hyundai kona electric">
+            <div class="car-details">
+                <h2>Hyundai Kona Electric</h2>
+                <p>The Hyundai Kona Electric is a compact SUV that combines practicality with electric efficiency.</p>
+                <p><strong>About the Car:</strong> With a range of up to 258 miles and a spacious interior, it’s perfect
+                    for city driving and weekend getaways.</p>
+                <P><strong>performance:</strong></P>
+                <ul>
+                    <li>Range: 258 miles</li>
+                    <li>Battery: 64 kWh</li>
+                    <li>Horsepower: 201 hp</li>
+                    <li>Top Speed: 104 mph</li>
+                </ul>
+                <p><strong>Price:</strong>$36,950 - $41,450</p>
+            </div>
+        </div>
+
+        <!-- Audi Q8 e-tron -->
+        <div class="car-container">
+            <img src="Hyundai-IONIQ-6-171122-06.jpg" alt="hyundai IONIQ 6">
+            <div class="car-details">
+                <h2>Hyundai Ioniq 6</h2>
+                <p>The Hyundai Ioniq 6 is a sleek electric sedan that offers a blend of performance and efficiency.</p>
+                <p><strong>About the Car:</strong> With a range of up to 361 miles, it’s designed for those who want a
+                    stylish and eco-friendly ride.</p>
+                <p><strong>Description:</strong> The Ioniq 6 features a spacious interior, advanced tech, and a unique
+                    aerodynamic design.</p>
+                <P><strong>performance:</strong></P>
+                <ul>
+                    <li>Range: 361 miles</li>
+                    <li>Battery: 77.4 kWh</li>
+                    <li>Horsepower: 320 hp</li>
+                    <li>Top Speed: 115 mph</li>
+                </ul>
+                <p><strong>Price:</strong> $41,600 - $56,600</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 DrivePlug. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

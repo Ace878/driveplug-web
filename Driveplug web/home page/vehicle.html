@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Car Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
+            background-color: #CBE4DE;
+            color: #000;
+        }
+
+        .container {
+            display: flex;
+        }
+        .left-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #2E4F4F;
+            width: 150px;
+            height: 100%;
+            z-index: 999;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .left-nav .logo {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .left-nav .logo img {
+            width: 100px; 
+            height: auto;
+        }
+        .left-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .left-nav ul li {
+            margin-bottom: 20px;
+        }
+
+        .left-nav ul li a {
+            color: #CBE4DE;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .left-nav ul li a:hover {
+            background-color: #CBE4DE;
+            color: #2E4F4F;
+        }
+        header {
+            background: #2E4F4F;
+            color: #CBE4DE;
+            padding: 15px 30px; 
+            display: flex;
+            justify-content: flex-end; 
+            align-items: center;
+            position: fixed;
+            width: calc(100% - 150px); 
+            top: 0;
+            left: 150px; 
+            z-index: 1000;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: #CBE4DE;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+
+        header nav ul li a:hover {
+            color: #ffffff;
+        }
+        main {
+            margin-left: 200px;
+            padding: 100px 20px 40px;
+        }
+
+        .brand-container {
+            margin-bottom: 50px;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .brand-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .vehicle-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .vehicle-container {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .vehicle-container img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .vehicle-container h3 {
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #2E4F4F;
+            color: #CBE4DE;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        @media only screen and (max-width: 768px) {
+            .main {
+                margin-left: 0;
+                padding-top: 80px; 
+            }
+            .brand-container{
+                width: 180%;
+                padding-right: 100px;
+            }
+            .vehicle-grid {
+                flex-direction: row;
+                align-items: auto;
+            }
+            
+        }
+        @media only screen and (max-width: 480px) {
+            
+            main {
+                margin-left: 50px;
+                padding-top: 80px; 
+            }
+            .brand-container{
+                width: 100%;
+                padding-left: 100px;
+                padding-right: 0;
+            }
+            .vehicle-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left-nav">
+        <div class="logo">
+            <img src="logoos-removebg-preview.png" alt="logo">
+        </div>
+        <ul>
+            <li><a href="#Toyota">Toyota</a></li>
+            <li><a href="#tesla">Tesla</a></li>
+            <li><a href="#nissan">Nissan</a></li>
+            <li><a href="#bmw">BMW</a></li>
+            <li><a href="#audi">Audi</a></li>
+            <li><a href="#ford">Ford</a></li>
+            <li><a href="#hyundai">Hyundai</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="HOME.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="HISTORY.html"><i class="fas fa-history"></i></a></li>
+                <li><a href="vehicle.html"><i class="fas fa-car"></i></a></li>
+                <li><a href="ABOUT US.html"><i class="fas fa-info-circle"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="Toyota" class="brand-container">
+            <h2>Toyota Electric Cars</h2>
+            <div class="vehicle-grid">
+                <div class="vehicle-container">
+                    <img src="2025_toyota_bz4x_00.jpg" alt="Toyota bZ4X" />
+                    <h3>Toyota bZ4X</h3>
+                    <p>All-electric SUV with advanced safety features and spacious interior.</p>
+                </div>
+                <div class="vehicle-container">
+                    <img src="mirai.jpg" alt="Toyota Mirai" />
+                    <h3>Toyota Mirai</h3>
+                    <p>Hydrogen fuel cell electric vehicle with long range and eco-friendly performance.</p>
+                </div>
+                <div class="vehicle-container">
+                    <img src="toyota-prius-prime.webp" alt="Toyota Prius Prime" />
+                    <h3>Toyota Prius Prime</h3>
+                    <p>Plug-in hybrid with electric-only driving mode and impressive fuel efficiency.</p>
+                </div>
+            </div>
+            <a href="toyota.html"><i class="fas fa-arrow-right">See More</i></a>
+
+        </section>
+        <section id="tesla" class="brand-container">
+            <h2>Tesla Electric Cars</h2>
+            <div class="vehicle-grid">
+                <div class="vehicle-container">
+                    <img src="Tesla3.jpeg" alt="Tesla Model 3" />
+                    <h3>Tesla Model 3</h3>
+                    <p>Compact electric sedan with advanced technology and a sleek design.</p>
+                </div>
+                <div class="vehicle-container">
+                    <img src="TeslaS.jpeg" alt="Tesla Model S" />
+                    <h3>Tesla Model S</h3>
+                    <p>Luxury all-electric sedan with long range and high performance.</p>
+                </div>
+                <div class="vehicle-container">
+                    <img src="Teslax.jpeg" alt="Tesla Model X" />
+                    <h3>Tesla Model X</h3>
+                    <p>Electric SUV with falcon-wing doors and spacious interior.</p>
+                </div>
+            </div>
+            <a href="tesla.html"><i class="fas fa-arrow-right">See More</i></a>
+        </section>
+    
+        <section id="nissan" class="brand-container">
+            <h2>Nissan Electric Cars</h2>
+            <div class="vehicle-grid">
+                <div class="vehicle-container">
+                    <img src="Nissan leaf.jpeg" alt="Nissan Leaf" />
+                    <h3>Nissan Leaf</h3>
+                    <p>Affordable all-electric hatchback with practical features and efficient performance.</p>
+                </div>
+                <div class="vehicle-container">
+                    <img src="Nissan Ariya.jpeg" alt="Nissan Ariya" />
+                    <h3>Nissan Ariya</h3>
+                    <p>All-electric SUV with sleek design, advanced technology, and impressive performance.</p>
+                </div>
+                <div class="vehicle-container">
+                    <img src="NISSAN SAKURA.jpg" alt="nissan-sakura" />
+                    <h3>Nissan-sakura</h3>
+                    <p>The Nissan Sakura is a compact kei electric car designed for urban environments with style and efficiency in
+                    mind.</p>
+                </div>
+            </div>
+            <a href="nissan.html"><i class="fas fa-arrow-right">See More</i></a>
+        </section>
+    
+        <section id="bmw" class="brand-container">
+            <h2>BMW Electric Cars</h2>
+            <div class="vehicle-grid">
+                <div class="vehicle-container">
+                    <img src="BMW i4.webp" alt="BMW i4" />
+                    <h3>BMW i4</h3>
+                    <p>Luxury all-electric sedan with sporty performance and sleek design.</p>
+                </div>
+                <div class="vehicle-container">
+                    <img src="BMW iX3.jpeg" alt="BMW iX3" />
+                    <h3>BMW iX3</h3>
+                    <p>Electric SUV combining practicality, premium features, and solid range.</p>
+                </div>
+                <div class="vehicle-container">
+                    <img src="BMW iX.jpeg" alt="BMW iX" />
+                    <h3>BMW iX</h3>
+                    <p>Flagship electric SUV with cutting-edge tech and luxurious comfort.</p>
+                </div>
+            </div>
+            <a href="bmw.html"><i class="fas fa-arrow-right">See More</i></a>
+        </section>
+        <section id="audi" class="brand-container">
+            <h2>Audi Electric Cars</h2>
+            <div class="vehicle-grid">
+                <div class="vehicle-container">
+                    <img src="Audi RSe-tron GT.jpeg" alt="Audi e-tron GT" />
+                    <h3>Audi e-tron GT</h3>
+                    <p>Luxury electric sedan with stunning design and high performance.</p>
+                </div>
+                <div class="vehicle-container">
+                    <img src="Audi  Q4 e-tron.jpeg" alt="Audi Q4 e-tron" />
+                    <h3>Audi Q4 e-tron</h3>
+                    <p>Compact electric SUV with versatile features and modern technology.</p>
+                </div>
+                <div class="vehicle-container">
+                    <img src="Audi e-tron.jpeg" alt="Audi Q8 e-tron" />
+                    <h3>Audi Q8 e-tron</h3>
+                    <p>Luxury electric SUV with spacious interior and advanced tech.</p>
+                </div>
+            </div>
+            <a href="audi.html"><i class="fas fa-arrow-right">See More</i></a>
+        </section>  
+       <section id="ford" class="brand-container"> 
+            <h2>Ford Electric Cars</h2>
+            <div class="vehicle-grid">
+                <div class="vehicle-container">
+                    <img src="Ford Mustang Mach-E.jpeg" alt="Ford Mustang Mach-E" />
+                    <h3>Ford Mustang Mach-E</h3>
+                    <p>All-electric SUV with sporty performance and iconic design.</p>
+                </div>
+                <div class="vehicle-container">
+                    <img src="Ford F-150 Lightning.jpeg" alt="Ford F-150 Lightning" />
+                    <h3>Ford F-150 Lightning</h3>
+                    <p>Electric version of the best-selling truck with impressive capabilities.</p>
+                </div>
+                <div class="vehicle-container">
+                    <img src="Ford Explorer.jpeg" alt="Ford Explorer EV" />
+                    <h3>Ford Explorer EV</h3>
+                    <p>Electric SUV with spacious interior and advanced technology.</p>
+                </div>
+            </div>
+            <a href="ford.html"><i class="fas fa-arrow-right">See More</i></a>
+        </section>  
+        <section id="hyundai" class="brand-container">
+            <h2>Hyundai Electric Cars</h2>
+            <div class="vehicle-grid">
+                <div class="vehicle-container">
+                    <img src="Hyundai loniq 5.jpeg" alt="Hyundai Ioniq 5" />
+                    <h3>Hyundai Ioniq 5</h3>
+                    <p>Stylish electric crossover with spacious interior and advanced tech.</p>
+                </div>
+                <div class="vehicle-container">
+                    <img src="Hyundai Kona Electric.jpeg" alt="Hyundai Kona Electric" />
+                    <h3>Hyundai Kona Electric</h3>
+                    <p>Compact electric SUV with practical features and solid range.</p>
+                </div>
+                <div class="vehicle-container">
+                    <img src="Hyundai-IONIQ-6-171122-06.jpg" alt="Hyundai Ioniq 6" />
+                    <h3>Hyundai Ioniq 6</h3>
+                    <p>Sleek electric sedan with aerodynamic design and efficient performance.</p>
+                </div>
+            </div>
+            <a href="hyundai.html"><i class="fas fa-arrow-right">See More</i></a>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 E-Car Company. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

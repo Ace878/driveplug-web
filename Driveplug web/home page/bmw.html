@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMW Electric Cars</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #CBE4DE;
+            color: #333;
+        }
+
+        header {
+            background: #2E4F4F;
+            color: #CBE4DE;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: #CBE4DE;
+            text-decoration: none;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header nav ul li a:hover {
+            color: #ffffff;
+        }
+
+        .container-wrapper {
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .car-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .car-container img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 10px;
+            flex: 1 1 300px;
+            object-fit: cover;
+        }
+
+        .car-details {
+            flex: 2 1 400px;
+        }
+
+        @media (max-width: 768px) {
+            .car-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .car-container img,
+            .car-details {
+                flex: 1 1 100%;
+                width: 100%;
+            }
+        }
+
+        .footer {
+            background-color: #2E4F4F;
+            color: #CBE4DE;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logoos-removebg-preview.png" alt="logo" />
+            <span>DrivePlug</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="HOME.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="HISTORY.html"><i class="fas fa-history"></i></a></li>
+                <li><a href="vehicle.html"><i class="fas fa-car"></i></a></li>
+                <li><a href="ABOUT US.html"><i class="fas fa-info-circle"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-wrapper">
+   
+        <div class="car-container">
+            <img src="BMW i4.webp" alt="BMW i4">
+            <div class="car-details">
+                <h2>BMW i4</h2>
+                <p>The BMW i4 is a sporty and luxurious electric Gran Coupé that blends dynamic driving with elegant
+                    design.</p>
+                <p><strong>About the Car:</strong> With up to 301 miles of range, 536 horsepower in the M50 model, and
+                    fast charging capability, the i4 brings true BMW performance to the EV world.</p>
+                    <P><strong>performance:</strong></P>
+                <ul>
+                    <li>0-60 mph in as little as 3.7 seconds (M50 model)</li>
+                    <li>Top speed of 140 mph</li>
+                    <li>Regenerative braking for enhanced efficiency</li>
+                </ul>
+                <p><strong>Price:</strong> Starting at $56,400</p>
+            </div>
+        </div>
+
+        <div class="car-container">
+            <img src="BMW iX.jpeg" alt="BMW iX">
+            <div class="car-details">
+                <h2>BMW iX</h2>
+                <p>The BMW iX is a fully electric luxury SUV that redefines innovation, comfort, and performance in an
+                    all-electric package.</p>
+                <p><strong>About the Car:</strong> With up to 324 miles of range, dual-motor all-wheel drive, and a
+                    futuristic interior, the iX is built for long journeys and daily adventures alike.</p>
+                <P><strong>performance:</strong></P>
+                <ul>
+                    <li>0-60 mph in as little as 4.4 seconds (xDrive50 model)</li>
+                    <li>Top speed of 124 mph</li>
+                    <li>Fast charging capability (DC fast charging)</li>
+                    <li>Advanced driver assistance systems</li>
+                </ul>
+                <p><strong>Price:</strong> Starting at $83,200</p>
+            </div>
+        </div>
+
+        <div class="car-container">
+            <img src="BMW iX3.jpeg" alt="BMW iX3">
+            <div class="car-details">
+                <h2>BMW iX3</h2>
+                <p>
+                    The BMW iX3 is the first all-electric version of the popular X3 SUV, combining practicality with
+                    electric efficiency.</p>
+                <p><strong>About the Car:</strong> With a range of up to 286 miles, the iX3 offers a spacious interior,
+                    advanced technology, and the driving dynamics expected from a BMW SUV.</p>
+                <P><strong>performance:</strong></P>
+                <ul>
+                    <li>0-60 mph in 6.8 seconds</li>
+                    <li>Top speed of 112 mph</li>
+                    <li>Battery capacity of 74 kWh</li>
+                    <li>Fast charging capability (DC fast charging)</li>
+                </ul>
+                <p><strong>Price:</strong> Starting at $60,000</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 DrivePlug. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

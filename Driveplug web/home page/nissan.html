@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nissan Electric Cars</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #CBE4DE;
+            color: #333;
+        }
+
+        header {
+            background: #2E4F4F;
+            color: #CBE4DE;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: #CBE4DE;
+            text-decoration: none;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header nav ul li a:hover {
+            color: #ffffff;
+        }
+
+        .container-wrapper {
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .car-container {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .car-container img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        border-radius: 10px;
+        flex: 1 1 300px;
+        object-fit: cover;
+    }
+
+    .car-details {
+        flex: 2 1 400px;
+    }
+
+    /* Mobile-friendly layout */
+    @media (max-width: 768px) {
+        .car-container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .car-container img,
+        .car-details {
+            flex: 1 1 100%;
+            width: 100%;
+        }
+    }
+
+        .footer {
+            background-color: #2E4F4F;
+            color: #CBE4DE;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logoos-removebg-preview.png" alt="logo" />
+            <span>DrivePlug</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="HOME.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="HISTORY.html"><i class="fas fa-history"></i></a></li>
+                <li><a href="vehicle.html"><i class="fas fa-car"></i></a></li>
+                <li><a href="ABOUT US.html"><i class="fas fa-info-circle"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-wrapper">
+    <!-- Nissan Leaf -->
+    <div class="car-container">
+        <img src="Nissan leaf.jpeg" alt="Nissan Leaf">
+        <div class="car-details">
+            <h2>Nissan Leaf</h2>
+            <p>The Nissan Leaf is one of the world’s most popular and affordable electric cars, known for its practicality
+                and efficiency.</p>
+            <p><strong>About the Car:</strong> With up to 212 miles of range (Leaf Plus), zero emissions, and advanced
+                driver-assist features, it's a smart choice for city and suburban driving.</p>
+            <P><strong>performance:</strong></P>
+            <ul>
+                <li>Range: up to 212 miles</li>
+                <li>Power: 147 hp (standard), 214 hp (Leaf Plus)</li>
+                <li>Battery: 40 kWh (standard), 62 kWh (Leaf Plus)</li>
+                <li>Charging: 0-80% in 40 minutes with DC fast charging</li>
+            </ul>
+                <p><strong>Price:</strong> $29,990 - $36,990</p>
+        </div>
+    </div>
+    
+    <!-- Nissan Ariya -->
+    <div class="car-container">
+        <img src="Nissan Ariya.jpeg" alt="Nissan Ariya">
+        <div class="car-details">
+            <h2>Nissan Ariya</h2>
+            <p>The Nissan Ariya is a sleek, all-electric SUV that combines performance, comfort, and futuristic design.</p>
+            <p><strong>About the Car:</strong> With a range up to 304 miles, dual-motor AWD, and a spacious tech-filled
+                cabin, the Ariya is Nissan's flagship EV SUV for the modern driver.</p>
+            <p><strong>performance:</strong></p>
+            <ul>
+                <li>Range: up to 304 miles</li>
+                <li>Power: 214 hp (single motor), 389 hp (dual motor)</li>
+                <li>Battery: 63 kWh (standard), 87 kWh (long range)</li>
+                <li>Charging: 0-80% in 30 minutes with DC fast charging</li>
+            </ul>
+            <p><strong>Price:</strong> $40,000 - $60,000</p>
+        </div>
+    </div>
+    
+    <!-- Nissan Sakura -->
+    <div class="car-container">
+        <img src="NISSAN SAKURA.jpg" alt="Nissan Sakura">
+        <div class="car-details">
+            <h2>Nissan Sakura</h2>
+            <p>The Nissan Sakura is a compact kei electric car designed for urban environments with style and efficiency in
+                mind.</p>
+            <p><strong>About the Car:</strong> With a lightweight design, nimble handling, and a range perfect for daily
+                commutes, the Sakura is Japan’s city-friendly electric ride.</p>
+            <p><strong>performance:</strong></p>
+            <ul>
+                <li>Range: up to 180 km (112 miles)</li>
+                <li>Power: 47 hp</li>
+                <li>Battery: 20 kWh</li>
+                <li>Charging: 0-80% in 40 minutes with DC fast charging</li>
+            </ul>
+            <p><strong>Price:</strong> $14,000 - $18,000</p>
+        </div>
+    </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 DrivePlug. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
